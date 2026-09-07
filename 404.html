@@ -10,7 +10,7 @@
 <body class = "noscroll">
     <div class = "chipmunkcheck", id="dogcheck">
       <img
-        src="zzz.png"
+        src="/zzz.png"
         alt="chipmunk"
         class="chipmunkcheck2"
         id="dog"
@@ -19,7 +19,7 @@
         
       >
         <img
-        src="zzz.png"
+        src="/zzz.png"
         alt="chipmunk"
         class="chipmunkcheck2"
         id="dog2"
@@ -36,14 +36,14 @@
       const dcheck = document.getElementById('dogcheck');
       const dimg = document.getElementById('dog');
       const dimg2 = document.getElementById('dog2');
-      const dsfx = new Audio('404.ogg');
+      const dsfx = new Audio('/404.ogg');
       const dimg2src = dimg2.src;
       dcheck.addEventListener('click', () => {
         if (dimg.style.opacity == 1) {
             dimg.style.opacity = 0;
             dimg2.style.opacity = 1;
             if (dimg2.src == dimg2src)
-                dimg2.src = 'zzz.gif';
+                dimg2.src = '/zzz.gif';
             dsfx.play();
         }
         else {
